@@ -3,15 +3,12 @@ import re
 import sys
 import time
 from pathlib import Path
-
 import modules.extensions as extensions_module
 from modules import api, chat, shared, training, ui
 from modules.html_generator import chat_html_wrapper
 from modules.LoRA import add_lora_to_model
-from modules.models import load_model, load_soft_prompt, unload_model
+from modules.models import load_model, load_soft_prompt
 from modules.text_generation import generate_reply, stop_everything_event
-
-
 from transformers import LlamaTokenizer, LlamaForCausalLM, GenerationConfig, pipeline
 from langchain.llms import HuggingFacePipeline
 from langchain import PromptTemplate, LLMChain
