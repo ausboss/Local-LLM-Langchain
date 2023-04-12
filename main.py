@@ -91,16 +91,11 @@ llm_chain = LLMChain(prompt=prompt,
                      llm=local_llm
                      )
 
-question = "What is the capital of England?"
-
-print(llm_chain.run(question))
-
-
-template = """Below is an instruction that describes a task. Write a response that appropriately completes the request.
-
-### Instruction: 
-{instruction}
-
-Answer:"""
-
-prompt = PromptTemplate(template=template, input_variables=["instruction"])
+while True:
+    question = input("Question: ")
+    print(llm_chain.run(question))
+    template = """Below is an instruction that describes a task. Write a response that appropriately completes the request.
+    ### Instruction: 
+    {instruction}
+    Answer:"""
+    prompt = PromptTemplate(template=template, input_variables=["instruction"])
