@@ -1,34 +1,39 @@
-# langchain-ooba
+# Langchain-ooba: Developer Edition
 
-## Warning: This guide requires a little bit of knowledge about python environments and some basic python / command line knowledge. I am mostly using this repo to document my research and share with the community to help jumpstart the use of non-chatGPT / local models with langchain.
+This repository is a companion to [oobabooga/text-generation-webui](https://github.com/oobabooga/text-generation-webui) and provides a command line and Jupyter Notebook interface for developers to run the text generation code without using Gradio.
 
+## Prerequisites
 
-I was able to do a simple test with langchain that uses all the same modules and shares from the text-generation-webui. Uploading my code for documentation and in case anybody else finds it useful. I plan on learning langchain and wanted to have it running locally.
+- Basic knowledge of Python and command line usage
+- Familiarity with Python environments
 
-I am using the one click installer version of text-generation-webui on windows with cuda. I used a slightly modified bat file to put me in the conda environment and then ran python main.py --auto-devices --wbits 4 --groupsize 128 --listen --no-stream (i added this bat to the repo)
+## Dependencies
 
-I have not tested this with regular versions of ooba but in theory it should work the same
+`main.py` uses the same modules as `text-generation-webui`. Make sure to fulfill all dependencies mentioned in the `text-generation-webui` repository. If any modules are missing just pip install them while the environment is activated.
 
-# Instructions for one click installer ooba users: 
->1. put langchain.bat and requirements.txt in your obabooga-windows folder
+## Getting Started
 
->2. put main.py in the obabooga-windows/text-generation-webui
+These instructions assume you have successfully set up the one-click installer version of `text-generation-webui` on Windows with CUDA.
 
->3. Run langchain.bat
+### Command Line Usage
 
->4. ????
+1. Place `langchain.bat` and `requirements.txt` in your `obabooga-windows` folder.
+2. Move `main.py` to the `obabooga-windows/text-generation-webui` folder.
+3. Run `langchain.bat`.
 
->5. PROFIT!!!
+### Jupyter Notebook Usage
 
+1. Activate your Mamba Miniconda environment and run `pip install jupyter`.
+2. Restart your command prompt or terminal, activate the environment again, and run `jupyter notebook`.
+3. Place `Main.ipynb` in the `obabooga-windows/text-generation-webui` folder.
+4. Open the notebook in the Jupyter interface. You can provide your arguments as a string in one of the cells.
 
-# jupyter notebook
-I just added a jupyter notebook method for easily testing out langchain in one cell to make things easier
->1. activate your mamba miniconda env and pip install jupyter
+![Jupyter Notebook Example](https://i.imgur.com/bxo09OAl.png)
 
->2. restart your cmd/terminal and activate the env again and run: jupyter notebook
+## Compatibility with other Ooba versions
 
->3. put Main.ipynb in the obabooga-windows/text-generation-webui folder
+This setup should work with regular Ooba versions as well. Just make sure to activate your Python environment and use `main.py` similarly to `server.py` in the original setup.
 
->4. Load the notebook. You can input your args as a string in one of the cells
+## Contributions
 
-![notebook image](https://i.imgur.com/bxo09OAl.png)
+Feel free to open issues, submit pull requests, or provide feedback to improve this repository and its documentation. Your contributions are appreciated!
