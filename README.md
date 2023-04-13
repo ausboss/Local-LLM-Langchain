@@ -36,4 +36,4 @@ This setup should work with regular Ooba versions as well. Just make sure to act
 
 ## Contributions
 
-Feel free to open issues, submit pull requests, or provide feedback to improve this repository and its documentation. Your contributions are appreciated!
+Feel free to open issues, submit pull requests, or provide feedback to improve this repository and its documentation. 
