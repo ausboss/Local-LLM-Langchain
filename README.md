@@ -1,6 +1,6 @@
-# Langchain-ooba: Developer Edition
+# Langchain-ooba: For Developer Testing
 
-This repository is a companion to [oobabooga/text-generation-webui](https://github.com/oobabooga/text-generation-webui) and provides a command line and Jupyter Notebook interface for developers to run the text generation code without using Gradio.
+This repository is a companion to [oobabooga/text-generation-webui](https://github.com/oobabooga/text-generation-webui) and provides a command line and Jupyter Notebook interface for developers to run the text generation code without using Gradio. Useful for testing out locally run LLMs with langchain or just for testing in general.
 
 ## Prerequisites
 
