@@ -1,4 +1,8 @@
 # langchain-ooba
+
+## Warning: This guide requires a little bit of knowledge about python environments and some basic python / command line knowledge. I am mostly using this repo to document my research and share with the community to help jumpstart the use of non-chatGPT / local models with langchain.
+
+
 I was able to do a simple test with langchain that uses all the same modules and shares from the text-generation-webui. Uploading my code for documentation and in case anybody else finds it useful. I plan on learning langchain and wanted to have it running locally.
 
 I am using the one click installer version of text-generation-webui on windows with cuda. I used a slightly modified bat file to put me in the conda environment and then ran python main.py --auto-devices --wbits 4 --groupsize 128 --listen --no-stream (i added this bat to the repo)
@@ -26,3 +30,5 @@ I just added a jupyter notebook method for easily testing out langchain in one c
 >3. put Main.ipynb in the obabooga-windows/text-generation-webui folder
 
 >4. Load the notebook. You can input your args as a string in one of the cells
+
+![notebook image](https://i.imgur.com/bxo09OAl.png)
