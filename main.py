@@ -2,6 +2,7 @@ import os
 import re
 import sys
 import time
+import json
 from pathlib import Path
 import modules.extensions as extensions_module
 from modules import api, chat, shared, training, ui
