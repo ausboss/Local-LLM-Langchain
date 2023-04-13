@@ -15,3 +15,14 @@ I have not tested this with regular versions of ooba but in theory it should wor
 >4. ????
 
 >5. PROFIT!!!
+
+
+# jupyter notebook
+I just added a jupyter notebook method for easily testing out langchain in one cell to make things easier
+>1. activate your mamba miniconda env and pip install jupyter
+
+>2. restart your cmd/terminal and activate the env again and run: jupyter notebook
+
+>3. put Main.ipynb in the obabooga-windows/text-generation-webui folder
+
+>4. Load the notebook. You can input your args as a string in one of the cells
