@@ -1,40 +1,22 @@
-# Langchain-ooba: For Developer Testing
+# Notebook for local LLMs
 
-This repository is a companion to [oobabooga/text-generation-webui](https://github.com/oobabooga/text-generation-webui) and provides a command line and Jupyter Notebook interface for developers to run the text generation code without using Gradio. Useful for testing out locally run LLMs with langchain or just for testing in general.
+The goal of the project is to let people easily load their local LLMs in a notebook for testing with langchain or other agents. This notebook is a companion to [oobabooga/text-generation-webui](https://github.com/oobabooga/text-generation-webui) and uses all the same code for loading models. If you are using cpp only you do not need the text-generation-webui code.
 
-## Prerequisites
-
-- Basic knowledge of Python and command line usage
-- Familiarity with Python environments
-
-## Dependencies
-
-`main.py` uses the same modules as `text-generation-webui`. Make sure to fulfill all dependencies mentioned in the `text-generation-webui` repository. If any modules are missing just pip install them while the environment is activated.
+![Jupyter Notebook Example](https://i.imgur.com/O6yiUnTl.png)
 
 ## Getting Started
+These instructions assume you have successfully set up the one-click installer `text-generation-webui` on Windows with CUDA or installed `llama-cpp` and its dependencies.
 
-These instructions assume you have successfully set up the one-click installer version of `text-generation-webui` on Windows with CUDA.
+If you are using `llama-cpp` models only, you do not need to follow the instructions for `text-generation-webui`.
+
+### Jupyter Notebook Usage:
+1. Activate your Python or Conda environment.
+2. Install Jupyter Notebook by running `pip install jupyter` in your preferred command prompt or terminal.
+3. Restart your command prompt or terminal to ensure that the installation is properly configured.
+4. Activate your Python or Conda environment again and run `jupyter notebook` in the command prompt or terminal to launch the Jupyter interface.
+5. Navigate to the directory where `LLM-Loader.ipynb` is located (ooba users: `./text-generation-webui`) and open the notebook in the Jupyter interface.
 
 
-### Jupyter Notebook Usage
-
-1. Activate your Mamba Miniconda environment and run `pip install jupyter`.
-2. Restart your command prompt or terminal, activate the environment again, and run `jupyter notebook`.
-3. Place `Main.ipynb` in the `obabooga-windows/text-generation-webui` folder.
-4. Open the notebook in the Jupyter interface. You can provide your arguments as a string in one of the cells.
-
-![Jupyter Notebook Example](https://i.imgur.com/bxo09OAl.png)
-
-### Command Line Usage
-
-1. Place `langchain.bat` and `requirements.txt` in your `obabooga-windows` folder.
-2. Move `main.py` to the `obabooga-windows/text-generation-webui` folder.
-3. Run `langchain.bat`.
-
-## Compatibility with other Ooba versions
-
-This setup should work with regular Ooba versions as well. Just make sure to activate your Python environment and use `main.py` similarly to `server.py` in the original setup.
 
 ## Contributions
-
-Feel free to open issues, submit pull requests, or provide feedback to improve this repository and its documentation. 
+Feel free to open issues, submit pull
