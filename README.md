@@ -15,11 +15,6 @@ This repository is a companion to [oobabooga/text-generation-webui](https://gith
 
 These instructions assume you have successfully set up the one-click installer version of `text-generation-webui` on Windows with CUDA.
 
-### Command Line Usage
-
-1. Place `langchain.bat` and `requirements.txt` in your `obabooga-windows` folder.
-2. Move `main.py` to the `obabooga-windows/text-generation-webui` folder.
-3. Run `langchain.bat`.
 
 ### Jupyter Notebook Usage
 
@@ -29,6 +24,12 @@ These instructions assume you have successfully set up the one-click installer v
 4. Open the notebook in the Jupyter interface. You can provide your arguments as a string in one of the cells.
 
 ![Jupyter Notebook Example](https://i.imgur.com/bxo09OAl.png)
+
+### Command Line Usage
+
+1. Place `langchain.bat` and `requirements.txt` in your `obabooga-windows` folder.
+2. Move `main.py` to the `obabooga-windows/text-generation-webui` folder.
+3. Run `langchain.bat`.
 
 ## Compatibility with other Ooba versions
 
