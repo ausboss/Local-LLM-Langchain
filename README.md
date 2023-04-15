@@ -1,8 +1,12 @@
+
+
+
 # Notebook for local LLMs
 
 The goal of the project is to let people easily load their local LLMs in a notebook for testing with langchain or other agents. This notebook is a companion to [oobabooga/text-generation-webui](https://github.com/oobabooga/text-generation-webui) and uses all the same code for loading models. If you are using cpp only you do not need the text-generation-webui code.
 
-![Jupyter Notebook Example](https://i.imgur.com/O6yiUnTl.png)
+## Agent instructed to give the answer as a pirate and search google
+![image](https://i.imgur.com/pt4XYcL.png)
 
 ## Getting Started
 These instructions assume you have successfully set up the one-click installer `text-generation-webui` on Windows with CUDA or installed `llama-cpp` and its dependencies.
