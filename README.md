@@ -7,6 +7,7 @@ The goal of the project is to let people easily load their local LLMs in a noteb
 
 ## Agent instructed to give the answer as a pirate and search google
 ![image](https://i.imgur.com/pt4XYcL.png)
+Model: llama-30b-sft-oa-alpaca-epoch-2
 
 ## Getting Started
 These instructions assume you have successfully set up the one-click installer `text-generation-webui` on Windows with CUDA or installed `llama-cpp` and its dependencies.
