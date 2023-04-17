@@ -20,7 +20,7 @@ If you are using `llama-cpp` models only, you do not need to follow the instruct
 2. Install Jupyter Notebook by running `pip install jupyter` in your preferred command prompt or terminal.
 3. Restart your command prompt or terminal to ensure that the installation is properly configured.
 4. Activate your Python or Conda environment again and run `jupyter notebook` in the command prompt or terminal to launch the Jupyter interface.
-5. Navigate to the directory where `Alpaca-wikipedia-search.ipynb` is located (ooba users put it in './text-generation-webui/' and open the notebook in the Jupyter interface.
+5. Navigate to the directory where `Alpaca-wikipedia-search.ipynb` is located (ooba users put it in `./text-generation-webui/` and open the notebook in the Jupyter interface.
 
 
 ## Disclaimer
