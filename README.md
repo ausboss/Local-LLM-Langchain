@@ -7,6 +7,7 @@ The goal of the project is to let people easily load their local LLMs in a noteb
 
 ## Agent instructed to give the answer as a pirate and search google
 ![image](https://i.imgur.com/pt4XYcL.png)
+
 Model: llama-30b-sft-oa-alpaca-epoch-2
 
 ## Getting Started
@@ -22,6 +23,11 @@ If you are using `llama-cpp` models only, you do not need to follow the instruct
 5. Navigate to the directory where `Alpaca-wikipedia-search.ipynb` is located and open the notebook in the Jupyter interface.
 
 
+## Disclaimer
+This might not work the same for every model and search query. Prompts may need to be tweaked to get the Agent to follow the instructions correctly. If you know of any instruct prompts that work well with certain models let me know.
+
 
 ## Contributions
-Feel free to open issues, submit pull
+Feel free to open issues, submit pull requests etc if you want to join in on this research
+
+
