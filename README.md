@@ -1,33 +1,22 @@
+## Notebook for Local LLMs
+The goal of this project is to allow users to easily load their locally hosted language models in a notebook for testing with Langchain. 
+There are currently three notebooks available. Two of them use an API to create a custom Langchain LLM wrapper—one for oobabooga's text generation web UI and the other for KoboldAI. The third notebook loads the models without an API by leveraging the oobabooga's text-generation-webui virtual environment and modules for model loading.
 
+You will end up with an instance of the Custom LLM Wrapper that can be used to generate text: 
 
+```llm("prompt goes here")```
 
-# Notebook for local LLMs
-
-The goal of the project is to let people easily load their local LLMs in a notebook for testing with langchain. We have one notebook  that leverages the [oobabooga/text-generation-webui](https://github.com/oobabooga/text-generation-webui) venv and modules for loading models and a Kobold API version. There is a small section for llama.cpp users to load thier models in the Oobabooga notebook.
-
-## Agent instructed to give the answer as a pirate and search google
-![image](https://i.imgur.com/pt4XYcL.png)
-
-Model: llama-30b-sft-oa-alpaca-epoch-2
+You can use this instead of the OpenAI LLM class that you see used in most of the guides and documentation.
 
 ## Getting Started
-These instructions assume you have successfully loaded up local models before in text-gen-webui, llama.cpp or KoboldAI.
+Please follow the setup instructions for the APIs provided in their respective repositories. Just update the url variable with your api url then run the cells to create an instance of the Custom LLM Wrapper. 
 
+### Roadmap
+Using the API is now my preferred method for loading the models. I plan on improving the API classes/notebooks, but for now, they work quite well. I'm leaving the non-api stuff up for now, but I won't be actively maintaining them in the future, so things might break.
 
-### Oooba Jupyter Notebook Usage:
+### Non-API Notebook Instructions:
 1. Activate your Python or Conda environment.
 2. Install Jupyter Notebook by running `pip install jupyter` in your preferred command prompt or terminal.
 3. Restart your command prompt or terminal to ensure that the installation is properly configured.
 4. Activate your Python or Conda environment again and run `jupyter notebook` in the command prompt or terminal to launch the Jupyter interface.
-5. Navigate to the directory where `Alpaca-wikipedia-search.ipynb` is located (ooba users put it in `./text-generation-webui/` and open the notebook in the Jupyter interface.
-
-Koboold users just need to put an api key in a cell and run it. You can even do it on collab.
-
-## Disclaimer
-This might not work the same for every model and search query. Prompts may need to be tweaked to get the Agent to follow the instructions correctly. If you know of any instruct prompts that work well with certain models let me know.
-
-
-## Contributions
-Feel free to open issues, submit pull requests etc if you want to join in on this research
-
-
+5. Navigate to the directory where `Non-API-Notebook.ipynb` is located (ooba users put it in `./text-generation-webui/` and open the notebook in the Jupyter interface.
